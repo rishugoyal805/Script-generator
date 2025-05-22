@@ -1,0 +1,7 @@
+pytrends
+pandas
+yt_dlp
+beautifulsoup4 
+googlesearch-python 
+transformers 
+youtube-search-python
