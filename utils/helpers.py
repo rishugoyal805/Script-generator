@@ -3,5 +3,5 @@ def load_themes(path):
         return [line.strip() for line in f.readlines() if line.strip()]
 
 def save_output(path, content):
-    with open(path, "a", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(content + "\n")
