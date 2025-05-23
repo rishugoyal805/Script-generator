@@ -4,9 +4,9 @@ from crewai import Agent, Task, Crew, LLM
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-llm = genai.GenerativeModel("gemini-1.5-flash")
-
+# genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+# llm = genai.GenerativeModel("gemini-1.5-flash")
+llm = LLM(model="gemini-1.5-flash", api_key=os.getenv("GEMINI_API_KEY"), verbose=True)
 AGENTS = {
     "ai": Agent(
         name="AI Trends Expert",
