@@ -7,7 +7,6 @@ load_dotenv()
 
 llm = LLM(model="gemini/gemini-1.5-flash", api_key=os.getenv("GEMINI_API_KEY"), verbose=True)
 
-# --- Agents setup ---
 ai_agent = Agent(
     name="AI Trends Expert",
     role="AI Tech Explainer",
@@ -20,10 +19,11 @@ ai_agent = Agent(
 
 ai_description = (
     "Write a compelling, human-sounding YouTube Shorts script (max 60 seconds) on the theme of AI. "
-    "Hook the viewer with a futuristic or surprising fact, keep it concise, and explain one clear insight."
+    "Hook the viewer with a futuristic or surprising fact, keep it concise, and explain one clear insight. "
+    "Format the script using clearly labeled timestamps (e.g., (0-4 sec), (4-12 sec), etc.) so that the pacing is natural and well-balanced across the 60 seconds."
 )
 
-ai_output = "A snappy, 60-second YouTube script explaining an AI trend."
+ai_output = "A timestamped 60-second YouTube script explaining an AI trend with custom intervals."
 
 fitness_agent = Agent(
     name="Health Coach",
@@ -37,10 +37,11 @@ fitness_agent = Agent(
 
 fitness_description = (
     "Create a fun, engaging 60-second YouTube Shorts script that shares a quick summer fitness tip or hack. "
-    "It should be energetic, motivating, and easy to follow."
+    "It should be energetic, motivating, and easy to follow. "
+    "Use a timestamp format like (0-3 sec), (3-10 sec), etc., and divide the script into well-paced time intervals that fit within 60 seconds."
 )
 
-fitness_output = "A motivating 60-second script promoting fitness hacks for summer."
+fitness_output = "A timestamped 60-second script promoting fitness hacks for summer with custom intervals."
 
 quantum_agent = Agent(
     name="Quantum Educator",
@@ -54,10 +55,11 @@ quantum_agent = Agent(
 
 quantum_description = (
     "Write a simplified, engaging YouTube Shorts script (max 60 seconds) that explains a core quantum computing concept. "
-    "Use a relatable analogy or scenario to help the audience understand quickly."
+    "Use a relatable analogy or scenario to help the audience understand quickly. "
+    "Break the script using timestamp labels like (0-5 sec), (5-14 sec), etc., with the interval lengths decided naturally to match the script pacing."
 )
 
-quantum_output = "A 60-second script that makes a quantum computing idea fun and clear."
+quantum_output = "A clear and fun timestamped 60-second script on quantum computing with natural intervals."
 
 tech_agent = Agent(
     name="Tech Reviewer",
@@ -71,10 +73,12 @@ tech_agent = Agent(
 
 tech_description = (
     "Generate a 60-second YouTube Shorts script reviewing a trending tech gadget. "
-    "Make it fun, comparison-rich, and highlight unique features."
+    "Make it fun, comparison-rich, and highlight unique features. "
+    "Include timestamps like (0-6 sec), (6-15 sec), etc., but let the time intervals be flexible based on the natural flow of the script. "
+    "Ensure it fits within 60 seconds in total."
 )
 
-tech_output = "An engaging, quick gadget review script suitable for Shorts."
+tech_output = "An engaging, timestamped 60-second gadget review script with flexible pacing."
 
 default_agent = Agent(
     name="Default Content Creator",
@@ -88,10 +92,98 @@ default_agent = Agent(
 
 default_description = (
     "Write a concise and engaging 60-second YouTube Shorts script based on the provided theme. "
-    "Focus on clarity, tone, and one strong insight."
+    "Include timestamps like (start sec - end sec) for each part of the script. "
+    "Decide the intervals yourself to ensure smooth pacing and clarity across the 60-second video."
 )
 
-default_output = "A general 60-second content script fit for a YouTube Short."
+default_output = "A well-structured timestamped 60-second content script suitable for YouTube Shorts."
+
+
+# --- Agents setup ---
+# ai_agent = Agent(
+#     name="AI Trends Expert",
+#     role="AI Tech Explainer",
+#     goal="Explain and summarize AI-related news.",
+#     backstory="Specializes in tracking and simplifying AI trends for the general audience.",
+#     llm=llm,
+#     memory=True,
+#     verbose=False
+# )
+
+# ai_description = (
+#     "Write a compelling, human-sounding YouTube Shorts script (max 60 seconds) on the theme of AI. "
+#     "Hook the viewer with a futuristic or surprising fact, keep it concise, and explain one clear insight."
+# )
+
+# ai_output = "A snappy, 60-second YouTube script explaining an AI trend."
+
+# fitness_agent = Agent(
+#     name="Health Coach",
+#     role="Fitness Expert",
+#     goal="Deliver engaging fitness and health content.",
+#     backstory="A virtual trainer who loves giving summer fitness hacks and lifestyle advice.",
+#     llm=llm,
+#     memory=True,
+#     verbose=False
+# )
+
+# fitness_description = (
+#     "Create a fun, engaging 60-second YouTube Shorts script that shares a quick summer fitness tip or hack. "
+#     "It should be energetic, motivating, and easy to follow."
+# )
+
+# fitness_output = "A motivating 60-second script promoting fitness hacks for summer."
+
+# quantum_agent = Agent(
+#     name="Quantum Educator",
+#     role="Quantum Tech Explainer",
+#     goal="Make quantum computing easy for students and educators.",
+#     backstory="Helps make complex quantum topics accessible to all.",
+#     llm=llm,
+#     memory=True,
+#     verbose=False
+# )
+
+# quantum_description = (
+#     "Write a simplified, engaging YouTube Shorts script (max 60 seconds) that explains a core quantum computing concept. "
+#     "Use a relatable analogy or scenario to help the audience understand quickly."
+# )
+
+# quantum_output = "A 60-second script that makes a quantum computing idea fun and clear."
+
+# tech_agent = Agent(
+#     name="Tech Reviewer",
+#     role="Gadget Analyst",
+#     goal="Present top tech gadgets in a fun and informative way.",
+#     backstory="A gadget nerd who reviews the latest devices and makes comparisons.",
+#     llm=llm,
+#     memory=True,
+#     verbose=False
+# )
+
+# tech_description = (
+#     "Generate a 60-second YouTube Shorts script reviewing a trending tech gadget. "
+#     "Make it fun, comparison-rich, and highlight unique features."
+# )
+
+# tech_output = "An engaging, quick gadget review script suitable for Shorts."
+
+# default_agent = Agent(
+#     name="Default Content Creator",
+#     role="Content Generalist",
+#     goal="Generate engaging YouTube content on any theme.",
+#     backstory="A versatile content writer who adapts to any niche on the fly.",
+#     llm=llm,
+#     memory=True,
+#     verbose=False
+# )
+
+# default_description = (
+#     "Write a concise and engaging 60-second YouTube Shorts script based on the provided theme. "
+#     "Focus on clarity, tone, and one strong insight."
+# )
+
+# default_output = "A general 60-second content script fit for a YouTube Short."
 
 # --- Function to generate task ---
 def generate_task_for_theme(theme):
