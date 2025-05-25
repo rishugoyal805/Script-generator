@@ -1,11 +1,6 @@
-pytrends
-pandas
-yt_dlp
 requests 
 dotenv
 google-generativeai
-beautifulsoup4 
-googlesearch-python 
-transformers 
-youtube-search-python
 crewai
+langchain 
+langchain-google-genai
