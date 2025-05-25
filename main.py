@@ -6,10 +6,10 @@ from utils.helpers import save_output
 
 async def main():
     themes = [
-        "AI tools in 2025",
-        "Fitness hacks in summer",
-        "Quantum computing in education",
-        "Top 5 tech gadgets this year"
+        "AI tools in 2025"
+        # "Fitness hacks in summer",
+        # "Quantum computing in education",
+        # "Top 5 tech gadgets this year"
     ]
 
     os.makedirs("outputs/themes", exist_ok=True)
