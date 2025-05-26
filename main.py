@@ -30,18 +30,11 @@ async def main():
         content += "--- BASED ON ALL TRENDS ---\n"
         content += "SHORT SCRIPT:\n" + result.raw + "\n"
 
-        # Generate content for each individual trend
-        # for i, trend in enumerate(trends):
-        #     crew = generate_task_for_theme(trend)
-        #     result = crew.kickoff()
-        #     content += f"\n--- INDIVIDUAL TREND #{i+1}: {trend} ---\n"
-        #     content += "SHORT SCRIPT:\n" + result.raw + "\n"
-        # Parallel async processing for all trends
-        trend_crews = [generate_task_for_theme(trend) for trend in trends]
+        trend_crews = [generate_task_for_theme(trend) for trend in trends[:1]]
         trend_tasks = [crew.kickoff_async() for crew in trend_crews]
         trend_results = await asyncio.gather(*trend_tasks)
 
-        for i, (trend, result) in enumerate(zip(trends, trend_results)):
+        for i, (trend, result) in enumerate(zip(trends[:1], trend_results)):
             content += f"\n--- INDIVIDUAL TREND #{i+1}: {trend} ---\n"
             content += "SHORT SCRIPT:\n" + result.raw + "\n"
 
