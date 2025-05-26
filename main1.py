@@ -7,7 +7,7 @@ from utils.helpers import save_output
 
 async def main():
     start_time = time.perf_counter()
-    theme = "time"
+    theme = "time python library"
 
     os.makedirs("outputs/themes", exist_ok=True)
     # Add theme and trends info
@@ -20,8 +20,8 @@ async def main():
 
     # Print and save the content
     print(content)
-    file_name = f"outputs/themes/{theme.replace(' ', '_').lower()}.txt"
-    save_output(file_name, content)
+    # file_name = f"outputs/themes/{theme.replace(' ', '_').lower()}.txt"
+    # save_output(file_name, content)
     end_time = time.perf_counter()  # ⏱️ End timer
     total_time = end_time - start_time
     print(f"\n✅ Total execution time: {total_time:.2f} seconds")
