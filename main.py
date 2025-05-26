@@ -1,10 +1,12 @@
 import os
 import asyncio
+import time
 from agents.trend_fetcher import fetch_trending_data
 from agents.specialized_agents import generate_task_for_theme
 from utils.helpers import save_output
 
 async def main():
+    start_time = time.perf_counter()
     themes = [
         "AI tools in 2025"
         # "Fitness hacks in summer",
@@ -29,9 +31,17 @@ async def main():
         content += "SHORT SCRIPT:\n" + result.raw + "\n"
 
         # Generate content for each individual trend
-        for i, trend in enumerate(trends):
-            crew = generate_task_for_theme(trend)
-            result = crew.kickoff()
+        # for i, trend in enumerate(trends):
+        #     crew = generate_task_for_theme(trend)
+        #     result = crew.kickoff()
+        #     content += f"\n--- INDIVIDUAL TREND #{i+1}: {trend} ---\n"
+        #     content += "SHORT SCRIPT:\n" + result.raw + "\n"
+        # Parallel async processing for all trends
+        trend_crews = [generate_task_for_theme(trend) for trend in trends]
+        trend_tasks = [crew.kickoff_async() for crew in trend_crews]
+        trend_results = await asyncio.gather(*trend_tasks)
+
+        for i, (trend, result) in enumerate(zip(trends, trend_results)):
             content += f"\n--- INDIVIDUAL TREND #{i+1}: {trend} ---\n"
             content += "SHORT SCRIPT:\n" + result.raw + "\n"
 
@@ -39,6 +49,9 @@ async def main():
         print(content)
         file_name = f"outputs/themes/{theme.replace(' ', '_').lower()}.txt"
         save_output(file_name, content)
+        end_time = time.perf_counter()  # ⏱️ End timer
+        total_time = end_time - start_time
+        print(f"\n✅ Total execution time: {total_time:.2f} seconds")
 
 if __name__ == "__main__":
     asyncio.run(main())
