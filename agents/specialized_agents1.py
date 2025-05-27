@@ -14,7 +14,7 @@ llm = LLM(
 
 # ✨ Updated Hinglish + 2-Friend Style
 delhi_youth_convo_style = (
-    "Tu ek YouTube Shorts style script likh raha hai (max 90 sec) jisme do dost (Aman aur Sid) casually baat kar rahe hain ek tech feature ke baare mein.\n\n"
+    "Tu ek YouTube Shorts style script likh raha hai (max 90 sec) jisme do dost (Nik aur Sid) casually baat kar rahe hain ek tech feature ke baare mein.\n\n"
     "🗣️ Tone: Chill Delhi-NCR college student banter. Thoda roasting, thoda sarcasm, full comedy.\n"
     "💬 Format: Pure conversation (no narration), jaise 2 doston ka casual chat ho raha ho canteen ya hostel me.\n"
     "🎭 Add expressions like 'bhai', 'arey ruk na', 'sach me?', 'scene kya hai', etc.\n"
