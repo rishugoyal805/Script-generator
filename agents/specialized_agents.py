@@ -12,7 +12,7 @@ from crewai import Agent
 # ✨ Hinglish Script Style Instructions
 hinglish_style_instructions = (
     "✨ Use Hinglish (casual spoken Hindi + English in Roman script).\n"
-    "🗣️ Tone: Fun, witty, youthful — jaise tu apne dost ko explain kar raha ho.\n"
+    "🗣 Tone: Fun, witty, youthful — jaise tu apne dost ko explain kar raha ho.\n"
     "🤣 Add thoda humor, thoda meme energy — relatable hona chahiye.\n"
     "✅ Avoid boring technical language — explain simple terms with analogies or desi references.\n"
     "🎯 Use a timestamp format: (0-4 sec), (4-12 sec), etc., and make sure it all fits within 60 seconds.\n"
