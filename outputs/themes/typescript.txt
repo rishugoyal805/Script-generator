@@ -1,0 +1,37 @@
+
+== THEME: Typescript ==
+
+--- BASED ON ALL TRENDS ---
+FEATURES:
+Static Typing, Type Inference, Interfaces, Classes, Generics, Enums, Type Aliases, Union Types, Intersection Types, Literal Types, Tuple Types, Optional Properties, Readonly Properties, Functions, Arrow Functions, Generics in Functions, Type Guards, Conditional Types, Mapped Types, Infer keyword, Keyof keyword, typeof keyword, instanceof keyword, Modules, Namespaces, Ambient Declarations, Decorators, Mixins, Async/Await, Promises, Generics with Async/Await, Type Assertions, Non-null Assertion Operator, Optional Chaining, Nullish Coalescing Operator, Object Destructuring, Array Destructuring, Spread Syntax, Rest Parameters, JSX Support, TypeScript Compiler, Type Definitions, Declaration Merging
+
+--- TASK #1 for: Static Typing ---
+SHORT SCRIPT:
+**(0-5 sec):**
+
+Sid: Bhai, tujhe TypeScript pata hai?  Sun, maine GitHub pe ek project dekha, saara TypeScript mein likha hai.  Scene kya hai iska?
+
+**(5-15 sec):**
+
+Aman: Arey bhai, TypeScript JavaScript ka bada bhai hai!  Socho, tum pizza order karte ho,  par tumhe pata nahi kitne slices aayenge. JavaScript aisa hi hai – kuch bhi daal do, chalega.  TypeScript?  Woh pehle se hi bol deta hai, "Bhai, yeh 8 slices ka pizza hai, aur har slice mein pepperoni hogi."
+
+**(15-25 sec):**
+
+Sid:  Ohh bhai! Yeh toh mast chiz hai!  Toh matlab, woh pehle hi check kar leta hai ki code sahi hai ya galat? Jaise ki mummy check karti hai ki humne khana saaf kiya ya nahi?
+
+**(25-35 sec):**
+
+Aman: Bilkul bhai! Static typing iska naam hai.  Imagine, tum code likh rahe ho, aur TypeScript bol raha hai, "Arrey bhai, yeh variable toh number ke liye hai,  tum string daal rahe ho!  Yeh toh galat hai, jaise ki golgappe mein chutney ki jagah imli dalna!"  Compile time pe hi error pakad leta hai.  
+
+**(35-45 sec):**
+
+Sid: Sach mein?  Toh debugging ka kaam easy ho jata hai?  Jaise ki exam ke pehle ratto rat revision karna padta hai, lekin agar pehle se hi padh liya ho toh? Maza aa gaya broo! Thoda detail mein bata na bhai.
+
+**(45-55 sec):**
+
+Aman:  Haan bhai!  Debugging ka tension kam ho jata hai.  Socho, tumne ek bada sa project banaya, aur baad mein pata chala ki kisi ek variable ki wajah se saara code crash ho raha hai.  TypeScript ne yeh problem pehle hi pakad liya hota.  Time bachta hai, aur tension bhi.  Jaise ki Delhi Metro mein jagah mil jaaye!
+
+**(55-60 sec):**
+
+Sid:  Bhai, maza aa gaya!  Yeh toh ekdum "life-saver" hai! Ab toh main bhi TypeScript seekhunga.  Warna, mere code mein itne bugs hain ki lagta hai ki maine koi zombie movie likhi hai!
+

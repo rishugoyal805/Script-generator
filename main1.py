@@ -7,7 +7,11 @@ from utils.helpers import save_output
 
 async def main():
     start_time = time.perf_counter()
-    theme = "Github"
+    theme = input("Enter the theme for which you want to generate content: ").strip()
+    if not theme:  # Check if the theme is empty
+        print("❌ No theme provided. Please enter a valid theme.")
+        return
+    print(f"\n🔍 Generating content for theme: {theme}")
 
     os.makedirs("outputs/themes", exist_ok=True)
     content = f"\n== THEME: {theme} ==\n\n"
@@ -21,7 +25,9 @@ async def main():
     # Try parsing the result.raw into a Python list
     try:
         if isinstance(result.raw, str) and result.raw.startswith("["):
-            import ast
+            import ast  
+            # ast stads for Abstract Syntax Trees, used for parsing Python expressions
+            # Use ast.literal_eval for safe evaluation of string representation of list
             sub_topics = ast.literal_eval(result.raw)  # safe eval for list from string
         elif isinstance(result.raw, list):
             sub_topics = result.raw

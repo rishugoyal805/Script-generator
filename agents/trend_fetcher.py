@@ -29,7 +29,7 @@ def fetch_trending_data(theme):
     }
 
     response = requests.post(url, headers=headers, json=data)
-    news_items = response.json().get("news", [])[:5]  # Get top 5 trends
+    news_items = response.json().get("news", [])[:6]  # Get top 6 trends
 
     if not news_items:
         return [], ""
