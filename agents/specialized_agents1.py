@@ -17,9 +17,10 @@ delhi_youth_convo_style = (
     "Tu ek YouTube Shorts style script likh raha hai (max 90 sec) jisme do dost (Nik aur Sid) casually baat kar rahe hain ek tech feature ke baare mein.\n\n"
     "🗣️ Tone: Chill Delhi-NCR college student banter. Thoda roasting, thoda sarcasm, full comedy.\n"
     "💬 Format: Pure conversation (no narration), jaise 2 doston ka casual chat ho raha ho canteen ya hostel me.\n"
-    "🎭 Add expressions like 'bhai', 'arey ruk na', 'sach me?', 'scene kya hai', etc.\n"
+    "🎭 Add expressions like 'bhai', 'arey ruk na', 'sach me?', 'scene kya hai', 'ohh bhai! ye toh mast chiz hai', 'Maza aa gya broo', 'thoda detail mai bta na bhai' etc.\n"
+    "💡 Use simple language and avoid jargon. Explain complex terms with relatable examples.\n"
     "🤣 Include relatable examples, desi analogies (food, Bollywood, college life), and meme-style lines.\n"
-    "📹 Break script into timestamped segments: (0-5 sec), (5-15 sec), ... up to 90 sec.\n"
+    "📹 Break script into timestamped segments: (0-5 sec), (5-15 sec), ... up to 60 sec.\n"       #Chnaging this to 60 ,90 is too long
     "🚫 No technical lecture, just explain the feature through conversation in Hinglish (Roman Hindi + English)."
 )
 
@@ -40,7 +41,7 @@ def generate_task_for_theme(topic: str, feature: str = None):
         f"{delhi_youth_convo_style}\n\n"
         f"Topic: {topic}\n"
         f"Feature: {feature}\n\n"
-        f"Make sure both friends contribute equally. Make it funny, fast-paced, and use realistic youth lingo.\n"
+        f"Make sure both friends contribute almost equally. the one who explains should be more detailed and can take more time. Make it funny, fast-paced, and use realistic youth lingo.\n"
         f"End with a savage or funny outro line. No boring explanations. No code."
     )
 
@@ -48,7 +49,7 @@ def generate_task_for_theme(topic: str, feature: str = None):
         "A Hinglish YouTube Shorts script with timestamped segments like:\n"
         "(0-5 sec): Sid: Bhai tu GitHub pe Pull Request ka funda samjha...\n"
         "(5-15 sec): Aman: Arey bhai, woh basically teamwork wala scene hai...\n"
-        "...up to 90 seconds total."
+        "...up to 60 seconds total."
     )
 
     task = Task(description=description, agent=feature_agent, expected_output=expected_output)
