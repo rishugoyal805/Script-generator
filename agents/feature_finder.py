@@ -1,42 +1,57 @@
-# feature_finder_agent.py
-
 from crewai import Agent, Task, Crew, LLM
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# 🔑 Load LLM using Gemini Flash
-llm = LLM(model="gemini/gemini-1.5-flash", api_key=os.getenv("GEMINI_API_KEY"), verbose=True)
-
-# 🧠 Agent to find features of a given tool/platform/topic
-feature_agent = Agent(
-    name="Feature Finder",
-    role="Tool Features Specialist",
-    goal="Identify and explain the top features of any technical tool in a simple and helpful way.",
-    backstory="An expert product explorer who breaks down complex tools into digestible highlights that even beginners can follow.",
-    llm=llm,
-    memory=True,
-    verbose=False
+# 🔑 Load Gemini LLM
+llm = LLM(
+    model="gemini/gemini-1.5-flash",
+    api_key=os.getenv("GEMINI_API_KEY"),
+    verbose=True
 )
 
-# 📝 Task description (flexible for different tech topics)
-feature_description = (
-    "You are given a tech topic or tool name (e.g., GitHub, ChatGPT, VS Code, Canva, etc.). "
-    "Your job is to identify 5 to 7 cool, useful, or popular features of that tool. "
-    "Keep the language simple and beginner-friendly. No code or jargon unless explained in plain terms. "
-    "Return output as a clean Python list of strings — each describing one feature clearly."
+# 🧠 Function to create an agent dynamically based on topic
+def create_feature_agent(topic: str):
+    return Agent(
+        name="Feature Finder",
+        role=f"Specialist in {topic}",
+        goal=f"Identify all the necessary key features of {topic} and list only their names.",
+        backstory=f"A tool analysis expert who focuses on extracting the most used or talked-about features of {topic}, helping beginners get an overview.",
+        llm=llm,
+        memory=True,
+        verbose=False
+    )
+
+# 📝 Static task prompt template (customized with topic)
+feature_description_template = (
+    "You are given a topic: '{topic}'.\n"
+    "Your task is to extract only the names of the top all useful or popular features of that tool/platform.\n"
+    "Return a clean Python list of strings — only feature names, no extra description or explanation.\n"
+    "Example Output:\n['Pull Requests', 'GitHub Actions', 'Code Review', 'GitHub Pages', 'Issue Tracking']"
 )
 
-# ✅ Expected output format
-feature_output = (
-    "A Python list of 5 to 7 strings, where each string describes one useful/popular feature of the given topic."
-)
+# 🎯 Expected output
+feature_output = "A Python list of all strings, each string being the name of one useful/popular feature."
 
-# --- Function to generate a task using the agent ---
+# 🚀 Function to generate a crew based on topic
 def generate_feature_task(topic: str):
-    formatted_description = feature_description + f"\n\nTopic: {topic}"
-    task = Task(description=formatted_description, agent=feature_agent, expected_output=feature_output)
+    agent = create_feature_agent(topic)
+    task_description = feature_description_template.format(topic=topic)
 
-    crew = Crew(agents=[feature_agent], tasks=[task])
+    task = Task(
+        description=task_description,
+        agent=agent,
+        expected_output=feature_output
+    )
+
+    crew = Crew(agents=[agent], tasks=[task])
     return crew
+
+# ✅ Optional: Run directly for testing
+# if __name__ == "__main__":
+#     topic = "GitHub"
+#     crew = generate_feature_task(topic)
+#     result = crew.run()
+#     print("\n🔍 Feature Names for:", topic)
+#     print(result)
