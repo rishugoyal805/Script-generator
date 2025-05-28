@@ -14,7 +14,7 @@ Sid: Bhai, tu GitHub pe Pull Request ka funda samjha?  Mere assignment ka code m
 
 **(5-15 sec):**
 
-Aman: Arey bhai, woh basically teamwork wala scene hai!  Imagine, tum ek bada pizza banaya, lekin toppings thode kam hain.  Toh dusra banda aayega, extra toppings (code changes) daalega, aur ek “Pull Request” karega.
+Nik: Arey bhai, woh basically teamwork wala scene hai!  Imagine, tum ek bada pizza banaya, lekin toppings thode kam hain.  Toh dusra banda aayega, extra toppings (code changes) daalega, aur ek “Pull Request” karega.
 
 
 **(15-25 sec):**
@@ -24,7 +24,7 @@ Sid:  Toppings?  Code changes?  Sahi samjha?  Par yeh merge kaise hoga?  Imagine
 
 **(25-35 sec):**
 
-Aman:  Chill, bhai!  Woh review karega, dekh lega ki tere jalapenos se uske pizza ki taste kharab toh nahi ho rahi. Agar sahi hai, toh “approve” karega aur merge ho jaayega.  Jaise ek perfect fusion pizza ban gaya!
+Nik:  Chill, bhai!  Woh review karega, dekh lega ki tere jalapenos se uske pizza ki taste kharab toh nahi ho rahi. Agar sahi hai, toh “approve” karega aur merge ho jaayega.  Jaise ek perfect fusion pizza ban gaya!
 
 
 **(35-45 sec):**
@@ -34,7 +34,7 @@ Sid:  Toh basically, ek review bhi hota hai?  Jaise college mein assignment subm
 
 **(45-55 sec):**
 
-Aman:  Bilkul!  Agar usko kuch change lagta hai, toh woh comments karega, “Yeh jalapeno thoda kam kar de, zyada teekha hai!”  Aur phir tu changes karke “push” karega.  It’s like a collaborative cooking show!
+Nik:  Bilkul!  Agar usko kuch change lagta hai, toh woh comments karega, “Yeh jalapeno thoda kam kar de, zyada teekha hai!”  Aur phir tu changes karke “push” karega.  It’s like a collaborative cooking show!
 
 
 **(55-65 sec):**
@@ -44,7 +44,7 @@ Sid:  Toh yeh GitHub wala scene, ek team project mein ekdum zaroori hai?  Jaise 
 
 **(65-75 sec):**
 
-Aman:  Bhai, bilkul!  Imagine hum ek movie banaye, aur tu hero ka scene likh raha hai, main villain ka.  Toh pull request se hum dono ke scenes ko ek saath join karenge!  Without it, it's total chaos, like a Salman Khan movie script!
+Nik:  Bhai, bilkul!  Imagine hum ek movie banaye, aur tu hero ka scene likh raha hai, main villain ka.  Toh pull request se hum dono ke scenes ko ek saath join karenge!  Without it, it's total chaos, like a Salman Khan movie script!
 
 
 **(75-85 sec):**
@@ -54,5 +54,5 @@ Sid:  Sahi baat hai!  Toh ab main apna assignment submit kar sakta hu.  Thanks, 
 
 **(85-90 sec):**
 
-Aman:  Welcome, bhai!  Par yaad rakhna, agar code garbage hai, toh koi bhi tere jalapeno nahi khaayega.  Remember, maintain code hygiene!  *mic drop*
+Nik:  Welcome, bhai!  Par yaad rakhna, agar code garbage hai, toh koi bhi tere jalapeno nahi khaayega.  Remember, maintain code hygiene!  *mic drop*
 
