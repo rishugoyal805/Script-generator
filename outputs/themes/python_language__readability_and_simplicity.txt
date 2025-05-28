@@ -1,0 +1,36 @@
+
+--- TASK for: Readability and Simplicity ---
+SHORT SCRIPT:
+**(0-5 sec)**
+
+Sid: Bhai, tujhe pata hai Python kitna easy hai?  Jaise Maggi banana!
+
+**(5-15 sec)**
+
+Aman: Arey bhai!  Sach mein?  Main toh soch raha tha yeh koi rocket science hai.  Code likhne mein  kitna head scratching karna padega.
+
+
+**(15-25 sec)**
+
+Sid:  Bilkul nahi yaar!  Uski readability toh  dimaag khol dene wali hai.  Code itna saaf aur simple hota hai na, jaise teri girlfriend ki baatein... *sarcastically*.  Seriously though,  easy to understand hai.
+
+
+**(25-35 sec)**
+
+Aman: Ohh bhai! Ye toh mast chiz hai! Thoda detail mein bata na bhai.  Mereko toh C++ se  toh phobia hai,  ussme toh code itna complicated hai jaise IIT entrance exam ka paper.
+
+
+**(35-45 sec)**
+
+Sid: Dekh,  imagine tu ek recipe follow kar raha hai.  Agar instructions clear hain, toh tu easily bana lega na? Python ka code bhi aisa hi hai. Simple English jaise sentences.  Koi confusing symbols ya  complex syntax nahi hai.  Jaise aloo gobi ki recipe!
+
+
+**(45-55 sec)**
+
+Aman:  Maza aa gaya broo! Toh matlab,  koi bhi  coding background wala aadmi  easily learn kar sakta hai?  Even main?  Bhai main toh  college mein  chai banane ka expert hu, coding mein toh zero.
+
+
+**(55-60 sec)**
+
+Sid:  Bilkul!  Python beginners ke liye bhi perfect hai.  Bas thoda practice karo,  aur fir  tum bhi  apna  "Hello World" program  print kar paoge,  jaise  tum apna  Instagram caption likhte ho! Ab jaa,  practice kar!  Warna  teri coding skills  utni hi  weak rahenge jitni  teri chemistry ki marksheet hai!
+

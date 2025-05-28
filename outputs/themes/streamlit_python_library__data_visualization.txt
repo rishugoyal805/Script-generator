@@ -1,0 +1,31 @@
+
+--- TASK for: Data Visualization ---
+SHORT SCRIPT:
+**(0-5 sec):**
+
+Sid: Bhai, tujhe pata hai Streamlit kya hai?  Maine kal ek project pe kaam kiya, data visualization se related.  Scene kya hai?
+
+**(5-15 sec):**
+
+Aman: Arey ruk na bhai! Streamlit?  Python library hai na? Woh toh jisko data visualize karna hota hai, uske liye ekdum perfect hai!  Jaise tujhe apne college ke attendance ka data visualize karna hai na, toh woh aaram se kar sakta hai.  Ekdum simple interface hai.
+
+**(15-25 sec):**
+
+Sid: Sach me?  Matlab,  maine toh socha tha yeh koi rocket science hogi.  Thoda detail mein bata na bhai.  Mere pass ek excel sheet hai, puri semester ki chai ki kharcha.  Visualization kar sakta hu isse?
+
+**(25-35 sec):**
+
+Aman: Haan bhai!  Bilkul kar sakta hai.  Tu bas kuch lines likhega Python mein, aur boom!  Tere saare chai wale kharche ka ekdum mast graph ban jaega.  Bar graph, pie chart, kuch bhi!  Jaise ekdum fancy restaurant menu jaisa.  Samajh raha hai?
+
+**(35-45 sec):**
+
+Sid: Ohh bhai! Yeh toh mast chiz hai!  Toh matlab,  maine jo code likha, woh automatically ek interactive web app ban jaega?  Jismein main apna data dekh sakta hu,  zoom in zoom out kar sakta hu?  Jaise Netflix pe movie search karte hain?
+
+**(45-55 sec):**
+
+Aman:  Bilkul bhai!  Ekdum wahi scene hai!  Tu code likhta hai, Streamlit usko ekdum beautiful web app mein convert kar deta hai.  Koi backend, frontend ki tension nahi.  Bas data dala, aur visualization mil gaya.  Ekdum jhatpat!  Jaise Dilli mein golgappe khana.
+
+**(55-60 sec):**
+
+Sid: Maza aa gya broo!  Ab toh main apne saare projects mein Streamlit use karunga.  Tu bhi try kar.  Warna, chai ke kharche ka hisab nahi nikal payega.  Aur  yeh bata, agar data zyada hota hai toh kya yeh hang karta hai?
+
